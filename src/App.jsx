@@ -5,14 +5,28 @@ export default function App() {
   return (
     <div className="app">
       <Background />
-      <header><strong>EXPLORAÇÃO • VIDA SELVAGEM</strong></header>
+
+      <header>
+        <strong>WILD / STORIES</strong>
+        <nav aria-label="Navegação principal">
+          <span>EXPLORAR</span> · <span>SOBRE</span>
+        </nav>
+      </header>
+
       <main>
-        <section>
+        <section className="intro" aria-label="Apresentação">
+          <small>EXPLORAÇÃO • VIDA SELVAGEM</small>
           <h1>A natureza em cada detalhe.</h1>
-          <p>Descubra espécies extraordinárias.</p>
+          <p>
+            Descubra espécies extraordinárias em uma
+            experiência visual interativa.
+          </p>
         </section>
+
         <ImageSlider />
       </main>
+
+      <footer>REACT • TAILWIND CSS • JAVASCRIPT</footer>
     </div>
   );
 }
