@@ -1,5 +1,6 @@
 import Background from './components/Background.jsx';
 import ImageSlider from './components/ImageSlider.jsx';
+import logo from '/images/avatar.jpeg';
 
 export default function App() {
   return (
@@ -7,7 +8,7 @@ export default function App() {
       <Background />
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <header className="flex items-center justify-between border-b border-violet-100 py-8">
-          <strong className="text-mauve tracking-[.24em]">WILD / STORIES</strong>
+          <img src={logo} alt="Logo do site" className="rounded-full h-20 w-auto" />
           <nav aria-label="Navegação principal" className="text-xs font-semibold tracking-widest text-slate-500">
             EXPLORAR · SOBRE
           </nav>
